@@ -8,7 +8,7 @@ const b_height = Math.ceil(window.innerHeight / BLOCKS_NR);
 const data = ["fall", "random", "oval", "middle"];
 const random = Math.floor(Math.random() * 4);
 const results = data[random];
-console.log(results);
+// console.log(results);
 
 createBlocks("random");
 animation.addEventListener("change", (e) => {
