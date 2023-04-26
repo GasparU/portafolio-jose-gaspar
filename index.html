@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
-    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="./style2.css">
+    <title>Portafolio José Gaspar</title>
 </head>
 
 <body>
     <div class="toggle" onclick="toggleMenu()"></div>
     <section class="banner" id="home">
         <div class="imgSidebar">
-            <img src="./img/imagen32.jpg">
+            <div id="app"></div>
+            <div class="settings">
+                <select class="animation" id="animation">
+
+                </select>
+            </div>
         </div>
         <div class="contentBx">
             <h5 class="logoText">Mi Portfolio</h5>
@@ -43,34 +49,46 @@
         </div>
         <div class="content">
             <div class="textBx">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit laboriosam vel voluptatibus sint
-                    tempore quibusdam hic ducimus assumenda, praesentium incidunt ad soluta dolores provident inventore
-                    repudiandae! Harum ex corrupti rem?
-                    Amet pariatur porro voluptatum numquam itaque neque dolores dignissimos reiciendis. Porro ut culpa
-                    quasi est eveniet quaerat ipsa corporis <br><br>aspernatur, quis obcaecati. Facere atque eum, iusto
-                    id aut
-                    fugit accusantium.
-                    Accusamus dicta quisquam, sint maiores mollitia, illo incidunt aperiam dolores modi cumque
-                    laudantium! Excepturi suscipit sit numquam distinctio fuga, repellat in reiciendis iure, facere
-                    repudiandae nulla est, voluptatibus sunt ad.</p>
+                <p>Soy un hombre de 41 años, con una familia hermosa, gusto por la lectura y series de
+                    espionaje.
+                    Bachiller de la Universidad Nacional Mayor de San MArcos y con estudios de Post Grado en Psicología
+                    Organizacional.
+                    <br><br>
+                    Inicié en la programación por curiosidad y necesidad. Al inicio, tenía miedo de no poder entender
+                    nada, pues soy de una profesión de letras, sin embargo, pude romper el prejuicio que me limitaba y
+                    ahora no paro de aprender y buscar siempre nuevas formas de mejorar el código, nuevas formas de
+                    solucionar problemas y mejores animaciones.
+                    <br><br>
+                    Actualmente mi experiencia desarrollando código es en FrontEnd e iniciando BackEnd, así como algunas
+                    librerías. Una de las librerías que estoy aprendiendo por mi cuenta es React Three Fiber, para
+                    efectos 3D espectaculares.
+                </p>
                 <div class="iconPrograming">
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/js.png">
-                    </div>
+
                     <div class="iconContainer">
                         <img class="iconPx" src="./img/html-5.png">
+                        <p class="iconContainerP">HTML 5</p>
                     </div>
                     <div class="iconContainer">
                         <img class="iconPx" src="./img/css-3.png">
+                        <p class="iconContainerP">CSS</p>
                     </div>
                     <div class="iconContainer">
                         <img class="iconPx" src="./img/bootstrap.png">
+                        <p class="iconContainerP">bootstrap</p>
                     </div>
                     <div class="iconContainer">
+                        <img class="iconPx" src="./img/js.png">
+                        <p class="iconContainerP">JavaScript</p>
+                    </div>
+
+                    <div class="iconContainer">
                         <img class="iconPx" src="./img/physics.png">
+                        <p class="iconContainerP">React</p>
                     </div>
                     <div class="iconContainer">
                         <img class="iconPx" src="./img/python.png">
+                        <p class="iconContainerP">Python</p>
                     </div>
                 </div>
             </div>
@@ -81,57 +99,60 @@
     </section>
     <section class="services" id="services">
         <div class="title">
-            <h2>Our Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam asperiores facilis saepe fugit
-                in, aliquam iste esse, at odit soluta hic
-                Iure quis quos natus error architecto, laborum vel dolorem placeat voluptatem excepturi sapiente,
-                deleniti velit assumenda repudiandae </p>
+            <h2>Proyectos</h2>
+            <p>Estos diferentes proyectos son parte de mi aprendizaje, que van desde la maquetación y diseño responsive,
+                el uso de APIs, manejos de CRUD y algunas librerías. </p>
         </div>
         <div class="content">
             <div class="servicesBx">
                 <img src="./img/icon1.png">
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis voluptatum libero, delectus
-                    nostrum aspernatur, exercitationem maxime velit iste, expedita eius fuga atque ut? Beatae est ad
-                    molestias assumenda modi!
-                    Qui nam eum nesciunt eius, maxime quod. Quasi voluptatem voluptate sapiente inventore mollitia,
-                    veritatis aperiam adipisci dolore. Cumque perferendis eum facilis unde saepe, consectetur totam nam
-                    minus exercitationem natus veritatis.</p>
+                <h2>Diseño Web</h2>
+                <p>Este es el primer proyecto de maquetación y diseño web. Uso de Html y CSS, aún sin librerías, pero
+                    iniciando en el responsive.</p>
+
+                <a class="anchor" target="_blank" href="https://web-jose-gaspar.netlify.app/">Proyecto</a>
+
             </div>
             <div class="servicesBx">
-                <img src="./img/icon2.png">
-                <h2>Web Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis voluptatum libero, delectus
-                    nostrum aspernatur, exercitationem maxime velit iste, expedita eius fuga atque ut? Beatae est ad
-                    molestias assumenda modi!</p>
+                <img src="./img/credit-card2.png">
+                <h2>Frases Random</h2>
+                <p>Aplicación web desarrollada en React y Vite. El objetivo es que con cada Click en un Botón, se
+                    muestre de manera random una frase célebre, con su autor y de igual manera cambie el fondo. Para
+                    este caso he usado la librería TsParticles y react-tsparticles.</p>
+
+                <a class="anchor" target="_blank" href="https://frases-celebres-jose-gaspar.netlify.app/">Proyecto</a>
+
             </div>
             <div class="servicesBx">
-                <img src="./img/icon3.png">
-                <h2>Android Apps</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis voluptatum libero, delectus
-                    nostrum aspernatur, exercitationem maxime velit iste, expedita eius fuga atque ut? Beatae est ad
-                    molestias assumenda modi!</p>
+                <img src="./img/climate.png">
+                <h2>App de Clima</h2>
+                <p>Proyecto de React que muestra el clima en base a la geolocalización del usuario, en cualquier país
+                    del mundo. Adicionalmente puede buscar otra ciudad y hacer la comparación. Se usa la Api Open
+                    Weather Map y una petición GET.</p>
+
+                <a class="anchor" target="_blank" href="https://app-clima-jose-gaspar.netlify.app/">Proyecto</a>
+
             </div>
             <div class="servicesBx">
-                <img src="./img/icon4.png">
-                <h2>Photography</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis voluptatum libero, delectus
-                    nostrum aspernatur, exercitationem maxime velit iste, expedita eius fuga atque ut? Beatae est ad
-                    molestias assumenda modi!</p>
+                <img src="./img/rick2.png">
+                <h2>Rick And Morty</h2>
+                <p>Proyecto realizado en React y Vite, usando la Api Rick And Morty. Tiene un botón que trae de manera
+                    aleatoria personajes por categoría. También se puede ingresar el orden numérico de los personajes.
+                    Adicionalmente tiene paginación para aquellas categorías de gran cantidad de personajes.</p>
+
+                <a class="anchor" target="_blank" href="https://location-jose-gaspar.netlify.app/">Proyecto</a>
+
             </div>
             <div class="servicesBx">
-                <img src="./img/icon5.png">
-                <h2>Content Writing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis voluptatum libero, delectus
-                    nostrum aspernatur, exercitationem maxime velit iste, expedita eius fuga atque ut? Beatae est ad
-                    molestias assumenda modi!</p>
-            </div>
-            <div class="servicesBx">
-                <img src="./img/icon6.png">
-                <h2>Video Editing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis voluptatum libero, delectus
-                    nostrum aspernatur, exercitationem maxime velit iste, expedita eius fuga atque ut? Beatae est ad
-                    molestias assumenda modi!</p>
+                <img src="./img/users.png">
+                <h2>CRUD de Usuarios</h2>
+                <p>Proyecto de Reacto y Vite con diseño responsive. Usa una Api propia de Academlo. Se desarrolla un
+                    CRUD de usuarios. Se empleó la librería de axios, Sweet Alert2, React Bootstrap y React Hook Form.
+                    PErmite poder crear, editar y eliminar usuarios con su respectivo alert de diseño.
+                </p>
+
+                <a class="anchor" target="_blank" href="https://users-jose-gaspar.netlify.app/">Proyecto</a>
+
             </div>
 
         </div>
@@ -142,7 +163,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium neque assumenda earum cum delectus
                 consectetur ab quo eum provident maxime porro deleniti, nobis sapiente numquam odio ipsum quas
                 voluptatibus suscipit.
-                .</p>
+            </p>
         </div>
         <div class="content">
             <div class="workBx">
@@ -266,6 +287,7 @@
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
     </div>
+    <script src="./main.js"></script>
     <script src="./index.js" type="text/javascript"></script>
 </body>
 
