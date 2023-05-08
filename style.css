@@ -618,6 +618,11 @@ nav {
 }
 
 /* End Navbar */
+@media (max-width: 1500px) {
+  .logoText {
+    display: none;
+  }
+}
 
 @media (max-width: 1280px) {
   nav {
@@ -638,6 +643,13 @@ nav {
     background-repeat: no-repeat;
     cursor: pointer;
     z-index: 1000;
+  }
+
+  .iconPrograming {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 
   .toggle.active {
@@ -972,7 +984,7 @@ nav {
 
   .iconPrograming {
     display: flex;
-    justify-content: center;
+
   }
 
   .iconContainerP {
