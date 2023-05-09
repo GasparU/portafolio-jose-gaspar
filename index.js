@@ -21,3 +21,34 @@ function toggleMenu2() {
   menuToggle.classList.toggle("active2");
   sidebar.classList.toggle("active2");
 }
+
+// Aqui inicia para envio de correo
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_c7cmlyd';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send';
+      Swal.fire(
+        'Correo enviado!',
+        'Me contactaré contigo lo antes posible!',
+        'success'
+      )
+      
+     
+    }, (err) => {
+      btn.value = 'Send';
+      alert(JSON.stringify(err));
+      
+    });
+    
+});
