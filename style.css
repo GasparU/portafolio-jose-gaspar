@@ -27,6 +27,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  transition: transform 500ms ease;
 }
 
 .iconContainer:hover {
@@ -35,6 +36,7 @@
 
 .iconContainerP {
   color: black !important;
+  width: 80px;
 }
 
 section {
@@ -129,85 +131,6 @@ p {
   right: 0;
 }
 
-/* Inicio de Navbar Lateral */
-/* .toggle {
-  display: none;
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  background: #000 url(./img/menu.png);
-  background-size: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.toggle.active {
-  background: #000 url(./img/close.png);
-  background-size: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.banner .contentBx,
-.sidebar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: calc(100% - 550px);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-}
-
-.sidebar {
-  position: fixed;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  padding: 40px;
-  z-index: 100;
-  right: -100%;
-}
-
-.sidebar.active {
-  right: 0;
-}
-
-.sidebar ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.sidebar ul li {
-  list-style: none;
-}
-
-.sidebar ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 3em;
-  margin: 20px 0;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.sidebar ul li a:hover {
-  color: #00bcd4;
-} */
-
-/* Fin de navbar lateral */
-
 .sci {
   position: absolute;
   left: 100px;
@@ -221,16 +144,18 @@ p {
 .sci li {
   margin-right: 10px;
   list-style: none;
+
 }
 
 .sci li img {
-  transform: scale(0.5);
+  transition: transform 500ms ease;
   opacity: 0.7;
-  width: 95px;
+  width: 65px;
 }
 
 .sci li img:hover {
   opacity: 1;
+  transform: scale(1.2);
 }
 
 .title {
@@ -247,7 +172,7 @@ p {
 }
 
 .title p {
-  max-weight: 700px;
+  max-width: 700px;
   display: inline-block;
 }
 
@@ -987,10 +912,6 @@ nav {
 
   }
 
-  .iconContainerP {
-    width: 80px;
-  }
-
   .services .content .servicesBx {
     display: flex;
     justify-content: center;
@@ -1090,20 +1011,9 @@ nav {
     position: relative;
   }
 
-  /* .icons {
-    position: absolute;
-    right: -300px;
-    bottom: 0;
-  } */
-
   .logoText {
     display: none;
   }
-
-  /* .servicesBx {
-    height: 100%;
-    ;
-  } */
 
 }
 
