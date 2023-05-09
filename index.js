@@ -23,6 +23,7 @@ function toggleMenu2() {
 }
 
 // Aqui inicia para envio de correo
+// https://dashboard.emailjs.com/admin
 
 const btn = document.getElementById('button');
 
@@ -51,4 +52,4 @@ document.getElementById('form')
       
     });
     
-});
+}).reset();
