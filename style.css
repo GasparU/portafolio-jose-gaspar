@@ -223,6 +223,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 30px;
 }
 
 .titleDev2 {
@@ -233,6 +234,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 30px;
 }
 
 .titleDev3 {
@@ -243,6 +245,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 30px;
 }
 
 .titleDev4 {
@@ -253,6 +256,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 30px;
 }
 
 .titleDev5 {
@@ -263,6 +267,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 30px;
 }
 
 .about .content .imgBx {
@@ -289,15 +294,6 @@ p {
   text-align: center;
   background: #f5f5f5;
 }
-
-/* .services .content .servicesBx .btn_proyect {
-  position: absolute;
-  bottom: 25px;
-  border-radius: 5px;
-  font-size: 14px;
-  border: none;
-  background: #00bcd4;
-} */
 
 .services .content .servicesBx .anchor {
   position: absolute;
@@ -391,11 +387,13 @@ p {
 .work .content .workBx .textBx {
   background: #000;
   opacity: 0;
-  transition: 0.5;
+  border-radius: 30px;
+  transition: 500ms ease;
 }
 
 .work .content .workBx:hover .textBx {
   opacity: 1;
+  border-radius: 30px;
 }
 
 .work .content .workBx .textBx h3 {
