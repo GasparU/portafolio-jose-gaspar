@@ -3,10 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "montserrat";
   height: 100vh;
 }
+
 .settings {
   background-color: #191e28;
   color: #fff;
@@ -17,16 +19,19 @@ body {
   z-index: 1000;
   overflow: hidden;
 }
+
 .settings select {
   margin: 0 0 20px;
 }
+
 .block {
   background-image: url(/img/imagen32.jpg);
   background-repeat: no-repeat;
-  background-size: 550px 100vh;
+  background-size: 550px;
   position: absolute;
   transition: all 1000ms ease;
 }
+
 .animation {
   display: none;
 }
