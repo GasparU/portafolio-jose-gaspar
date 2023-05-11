@@ -518,8 +518,9 @@ nav {
 
 .navigation {
   position: relative;
-  width: 350px;
+  width: 400px;
   height: 70px;
+  /* padding: 0 15px; */
 }
 
 .navigation ul {
@@ -529,8 +530,8 @@ nav {
 .navigation ul li {
   position: relative;
   list-style: none;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 60px;
   z-index: 1;
 }
 
@@ -552,7 +553,7 @@ nav {
 }
 
 .navigation ul li.active2 a .icon {
-  font-size: 20px;
+  font-size: 30px;
   transform: translateY(-6px);
 }
 
@@ -574,8 +575,8 @@ nav {
 .indicator {
   position: absolute;
   left: 0;
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 60px;
   border-radius: 10px;
   transition: 0.5s;
 }
@@ -583,31 +584,31 @@ nav {
 .navigation ul li:nth-child(1).active2~.indicator {
   background: #f53b57;
   box-shadow: 0 15px 25px #f53b5799;
-  transform: translateX(calc(70px * 0));
+  transform: translateX(calc(80px * 0));
 }
 
 .navigation ul li:nth-child(2).active2~.indicator {
   background: #5d62fb;
   box-shadow: 0 15px 25px #5d62fb99;
-  transform: translateX(calc(70px * 1));
+  transform: translateX(calc(80px * 1));
 }
 
 .navigation ul li:nth-child(3).active2~.indicator {
   background: #05c46b;
   box-shadow: 0 15px 25px #05c46b99;
-  transform: translateX(calc(70px * 2));
+  transform: translateX(calc(80px * 2));
 }
 
 .navigation ul li:nth-child(4).active2~.indicator {
   background: #0fbcf9;
   box-shadow: 0 15px 25px #0fbcf999;
-  transform: translateX(calc(70px * 3));
+  transform: translateX(calc(80px * 3));
 }
 
 .navigation ul li:nth-child(5).active2~.indicator {
   background: #ffa801;
   box-shadow: 0 15px 25px #ffa80199;
-  transform: translateX(calc(70px * 4));
+  transform: translateX(calc(80px * 4));
 }
 
 /* End Navbar */
