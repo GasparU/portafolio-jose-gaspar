@@ -53,7 +53,6 @@ section {
   min-height: 100vh;
 }
 
-
 .logoText {
   position: absolute;
   top: 40px;
@@ -438,7 +437,6 @@ p {
   background: #111;
   color: #fff;
   font-size: 16px;
-  /* resize: none; */
 }
 
 .contact .contactForm .row .col100 {
@@ -511,7 +509,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: #f5f5f5;
   justify-content: end;
   width: 400px;
   color: #000;
