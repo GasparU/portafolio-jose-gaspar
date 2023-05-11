@@ -30,6 +30,8 @@ body {
   background-size: 550px;
   position: absolute;
   transition: all 1000ms ease;
+  overflow: hidden;
+  z-index: -10;
 }
 
 .animation {
