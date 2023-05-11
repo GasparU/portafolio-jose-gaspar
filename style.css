@@ -9,7 +9,7 @@
 }
 
 .iconPx {
-  height: 64px;
+  height: 50%;
 }
 
 .iconPrograming {
@@ -21,13 +21,14 @@
 
 .iconContainer {
   background-color: #fff;
-  padding: 0.5em 0.5em 0 0.5em;
+  padding: 0.2em 0.5em 0 0.5em;
   border-radius: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   transition: transform 500ms ease;
+  height: 130px;
 }
 
 .iconContainer:hover {
@@ -36,7 +37,8 @@
 
 .iconContainerP {
   color: black !important;
-  width: 80px;
+  width: 70px;
+  margin: 0;
 }
 
 section {
