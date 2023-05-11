@@ -8,6 +8,22 @@
   scroll-behavior: smooth;
 }
 
+.curriculo {
+  color: white;
+}
+
+.curriculo-btn {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  max-width: 250px;
+  text-decoration: none;
+}
+
 .iconPx {
   height: 70%;
 }

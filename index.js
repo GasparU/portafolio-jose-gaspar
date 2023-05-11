@@ -31,14 +31,14 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Sending...';
+   btn.value = 'Enviando...';
 
    const serviceID = 'default_service';
    const templateID = 'template_c7cmlyd';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send';
+      btn.value = 'Enviar';
       Swal.fire(
         'Correo enviado!',
         'Me contactaré contigo lo antes posible!',
@@ -47,7 +47,7 @@ document.getElementById('form')
       
      
     }, (err) => {
-      btn.value = 'Send';
+      btn.value = 'Enviar';
       alert(JSON.stringify(err));
       
     });
