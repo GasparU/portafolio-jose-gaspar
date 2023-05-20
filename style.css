@@ -630,19 +630,12 @@ nav {
   transform: translateX(calc(80px * 4));
 }
 
-/* End Navbar */
-/* @media (max-width: 1500px) {
-  .logoText {
-    display: none;
-  }
-} */
 
 @media (max-width: 1280px) {
-  nav {
+  /* nav {
     display: none;
   }
 
-  /* Inicio de Navbar Lateral */
   .toggle {
 
     position: fixed;
@@ -726,8 +719,6 @@ nav {
     color: #00bcd4;
   }
 
-  /* Fin de navbar lateral */
-
   .servicesBx {
     height: 400px;
     ;
@@ -741,12 +732,14 @@ nav {
   .sidebar {
     width: 100%;
     padding: 40px;
-  }
+  } */
 
   .logoText {
-    left: 40px;
+    display: none;
+    /* left: 40px; */
   }
 
+  /* 
   .toggle {
     right: 40px;
   }
@@ -808,14 +801,9 @@ nav {
 
   .sidebar ul li a {
     font-size: 50px;
-  }
+  } */
 }
 
-/* @media (max-width: 1024px) {
-  .contentBx {
-    height: 100vh;
-  }
-} */
 
 @media (max-width: 991px) {
 
@@ -919,7 +907,8 @@ nav {
   }
 
   .logoText {
-    left: 40px;
+    display: none;
+    /* left: 40px; */
   }
 
   .toggle {
