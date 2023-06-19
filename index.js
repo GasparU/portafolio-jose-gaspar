@@ -52,7 +52,7 @@ document.getElementById('form')
       
     });
     
-}).reset();
+});
 
 // Aquí acaba envio de correo
 

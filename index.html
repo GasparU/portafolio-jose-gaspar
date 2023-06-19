@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./style2.css">
+
     <title>Portafolio José Gaspar</title>
 </head>
 
@@ -21,8 +22,10 @@
             </div>
         </div>
         <div class="contentBx">
-            <h5 class="logoText">My Portfolio</h5>
-
+            <div>
+                <button class="dark" id="bdark">Dark Mode</button>
+            </div>
+            <!-- <h5 class="logoText">My Portfolio</h5> -->
             <nav class="navbar">
                 <div class="navigation">
                     <ul>
@@ -65,10 +68,11 @@
                 <a href="./archive/CV-Jose_Gaspar.pdf" class="curriculo-btn curriculo-2" target="_blank"
                     download="Curriculo José Gaspar">Descargar
                     Curriculo</a>
-                <h4 class="title-hola"><span>Hola</span>, soy</h4>
-                <h2>Jose Gaspar</h2>
-                <h4>Front End Web Developer.</h4>
-                <p class="parragraph">Soy un profesional con experiencia desarrollando proyectos de Desarrollo Web,
+                <h4 class="title-hola five"><span>Hola</span>, soy</h4>
+                <h2 class="four">Jose Gaspar</h2>
+                <h4 class="three">Front End Web Developer.</h4>
+                <p class="parragraph two">Soy un profesional con experiencia desarrollando proyectos de
+                    Desarrollo Web,
                     usando HTML, CSS, JavaScript así como distintas librerías, React, Redux y consumo de API.
                     <br>
                     Actualmente elaborando nuevos proyectos Frontend y ampliando
@@ -163,8 +167,9 @@
     </section>
     <section class="services" id="services">
         <div class="title">
-            <h2>Proyectos Recientes</h2>
-            <p class="parragraph">Estos diferentes proyectos son parte de mi aprendizaje, que van desde la maquetación y
+            <h2 class="rule">Proyectos Recientes</h2>
+            <p class="parragraph six">Estos diferentes proyectos son parte de mi aprendizaje, que van desde la
+                maquetación y
                 diseño responsive,
                 el uso de APIs, manejos de CRUD y algunas librerías. </p>
         </div>
@@ -235,7 +240,7 @@
     <section class="work" id="work">
         <div class="title">
             <h2>Mi Linea de Carrera</h2>
-            <p class="parragraph">La programación me ha inspirado en seguir una linea de carrera orientadora
+            <p class="parragraph seven">La programación me ha inspirado en seguir una linea de carrera orientadora
                 a fin de seguir un proceso de formación clara, estableciendo objetivos a mediano y largo
                 plazo. Si bien puede haber modificaciones, éstas deben seguir la siguiente ruta.
             </p>
@@ -391,6 +396,33 @@
             max: 45,
             speed: 100
         });
+
+        const bdark = document.querySelector('#bdark')
+
+        const contentBx = document.querySelector('.contentBx')
+        const services = document.querySelector('.services')
+        const work = document.querySelector('.work')
+        const two = document.querySelector('.two')
+        const three = document.querySelector('.three')
+        const four = document.querySelector('.four')
+        const five = document.querySelector('.five')
+        const six = document.querySelector('.six')
+        const seven = document.querySelector('.seven')
+        const dark = document.querySelector('.dark')
+        bdark.addEventListener('click', e => {
+            contentBx.classList.toggle('darkmode')
+            two.classList.toggle('two-2')
+            three.classList.toggle('two-2')
+            four.classList.toggle('two-2')
+            five.classList.toggle('two-2')
+            six.classList.toggle('two-2')
+            seven.classList.toggle('two-2')
+            dark.classList.toggle('dark-3')
+            services.classList.toggle('darkmode')
+            work.classList.toggle('darkmode')
+        })
+
+
     </script>
 </body>
 
