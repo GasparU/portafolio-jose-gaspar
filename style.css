@@ -672,19 +672,6 @@ nav {
         display: none;
     }
 
-    /* .curriculo-btn {
-        position: fixed;
-        left: 560px;
-        width: 130px;
-        height: 40px;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-    } */
-
     .dark {
         position: fixed;
         left: 330px;
@@ -787,7 +774,7 @@ nav {
     }
 
     .servicesBx {
-        height: 500px;
+        height: 520px;
         ;
     }
 
@@ -1114,8 +1101,7 @@ nav {
     /* Fin de navbar lateral */
 
     .servicesBx {
-        height: 500px;
-        ;
+        height: 550px;
     }
 
     .banner .imgSidebar {
@@ -1302,6 +1288,10 @@ nav {
         height: 1000px;
     }
 
+    .sci {
+        bottom: 100px;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -1315,7 +1305,7 @@ nav {
     }
 
     .sci {
-        bottom: 110px;
+        bottom: 70px;
     }
 
     body .about {
@@ -1354,7 +1344,7 @@ nav {
     }
 
     .sci {
-        bottom: 160px;
+        bottom: 100px;
     }
 
     .curriculo-2 {
@@ -1404,13 +1394,12 @@ nav {
         justify-content: center;
         text-align: center;
         align-items: center;
+        height: 600px !important;
     }
 
     .contact {
         height: 1000px;
     }
-
-
 
 }
 
@@ -1493,6 +1482,37 @@ nav {
     .dark {
         display: none;
     }
+
+    .servicesBx {
+        height: 650px !important;
+    }
+
+    .contentBx {
+        height: 667px !important;
+        padding: 100px 0;
+    }
+
+    .hello {
+        font-size: 20px !important;
+    }
+
+    .four {
+        font-size: 30px !important;
+    }
+
+    .parragraph {
+        padding: 0;
+        margin: 0;
+    }
+
+    .six {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .sci {
+        bottom: 0px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -1522,10 +1542,6 @@ nav {
 
     .logoText {
         display: none;
-    }
-
-    .sci {
-        bottom: 50px;
     }
 
     .services .content .servicesBx {
