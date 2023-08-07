@@ -31,9 +31,8 @@
 }
 
 .curriculo-2 {
-    position: fixed;
-    top: 30px;
-    left: 35%;
+    position: relative;
+    top: -200px;
     z-index: 20;
 }
 
