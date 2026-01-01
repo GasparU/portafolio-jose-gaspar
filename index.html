@@ -1,513 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./style2.css">
+    <meta name="description" content="Portafolio de José Gaspar. Desarrollador Full Stack (MERN).">
 
-    <title>Portafolio José Gaspar</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>José Gaspar | Desarrollador Full Stack</title>
 </head>
 
 <body>
     <div class="toggle" onclick="toggleMenu()"></div>
+    <button class="dark" id="bdark">Dark/Light</button>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="#about" onclick="toggleMenu()">Sobre Mí</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Proyectos</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Carrera</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </ul>
+    </div>
+
     <section class="banner" id="home">
         <div class="imgSidebar">
             <div id="app"></div>
-            <div class="settings">
-                <select class="animation" id="animation">
-                </select>
+            <div class="settings" style="display: none;">
+                <select class="animation" id="animation"></select>
             </div>
         </div>
+
         <div class="contentBx">
-            <div>
-                <button class="dark" id="bdark">Dark Mode</button>
-            </div>
             <nav class="navbar">
                 <div class="navigation">
                     <ul>
-                        <li class="list" onclick="toggleMenu2()">
-                            <a href="#home">
-                                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                                <span class="text">Inicio</span>
-                            </a>
-                        </li>
-                        <li class="list" onclick="toggleMenu2()">
-                            <a href="#about">
-                                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                                <span class="text">About</span>
-                            </a>
-                        </li>
-                        <li class="list" onclick="toggleMenu2()">
-                            <a href="#services">
-                                <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
-                                <span class="text">Projects</span>
-                            </a>
-                        </li>
-                        <li class="list" onclick="toggleMenu2()">
-                            <a href="#work">
-                                <span class="icon"><ion-icon name="bulb-outline"></ion-icon></span>
-                                <span class="text">career</span>
-                            </a>
-                        </li>
-                        <li class="list" onclick="toggleMenu2()">
-                            <a href="#contact">
-                                <span class="icon"><ion-icon name="call-outline"></ion-icon>
-                                </span>
-                                <span class="text">Contact</span>
-                            </a>
-                        </li>
+                        <li class="list active2"><a href="#home"><ion-icon name="home-outline"></ion-icon></a></li>
+                        <li class="list"><a href="#about"><ion-icon name="person-outline"></ion-icon></a></li>
+                        <li class="list"><a href="#services"><ion-icon name="code-slash-outline"></ion-icon></a></li>
+                        <li class="list"><a href="#work"><ion-icon name="trending-up-outline"></ion-icon></a></li>
+                        <li class="list"><a href="#contact"><ion-icon name="mail-outline"></ion-icon></a></li>
                         <div class="indicator"></div>
                     </ul>
                 </div>
             </nav>
+
             <div class="cabecera-celular">
-                <a href="./archive/CV_documentado_Jose_Gaspar_2024.pdf" class="curriculo-btn curriculo-2" target="_blank"
-                    download="C.V._José_Gaspar_Full_Stack_Web_Developer.pdf">Descargar
-                    Curriculo</a>
-                <h4 class="title-hola five"><span class="hello">Hola</span>, soy</h4>
-                <h2 class="four">José Gaspar</h2>
-                <h4 class="three">Full Stack Web Developer</h4>
-                <p class="parragraph two">Soy un profesional con <b><i>experiencia elaborando proyectos</i></b> de
-                    Desarrollo
-                    Web, tanto <b><i>FrontEnd y Backend</i></b>, con manejo de librerías de complementarias y con
-                    experiencia en contenido WEB y posicionamiento SEO.
-                    <br>
-                    Cuento con Capacidad de gestión y dirección de personas, con estilo de liderazgo situacional,
-                    orientado al trabajo en equipo y una
-                    cultura de mejoramiento de la calidad y con enfoque por resultados.
-                    <br>
-                    Cuento con una carrera en administración con más de 10 años de experiencia en Recursos Humanos y
-                    gestión de personal.
+                <h4 class="title-hola">Hola, soy</h4>
+                <h2>José Gaspar</h2>
+                <h4>Desarrollador Web Full Stack (MERN)</h4>
+                <p>
+                    Transformo ideas complejas en aplicaciones web funcionales y escalables.
+                    Combino una sólida lógica de backend con un frontend intuitivo.
                 </p>
-                <a href="#about" class="btn">Acerca de Mi</a>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                    <a href="#about" class="btn">Conóceme</a>
+                    <a href="./archive/JOSE_GASPAR_CV.pdf" class="curriculo-btn"
+                        target="_blank">Descargar CV</a>
+                </div>
             </div>
+
             <ul class="sci">
-                <li><a target="_blank" href="https://www.linkedin.com/in/josegasparunzueta/"><img class="icons"
-                            src="./img/linkedin.png"></a></li>
-                <li><a target="_blank" href="https://api.whatsapp.com/send?phone=51929668883"><img class="icons2"
-                            src="./img/whatsapp.png"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/josegasparunzueta/"><img
+                            src="./img/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a target="_blank" href="https://api.whatsapp.com/send?phone=51929668883"><img
+                            src="./img/whatsapp.png" alt="WhatsApp"></a></li>
             </ul>
         </div>
     </section>
+
     <section class="about" id="about">
-        <div class="title white">
-            <h2>Sobre Mi</h2>
-            <p class="parragraph sub-title">¡Programador Web en linea de carrera con búsqueda constante de la mejora
-                continua!</p>
+        <div class="title">
+            <h2>Sobre Mí</h2>
+            <p>Más allá del código: Entendiendo el problema para construir la solución correcta.</p>
         </div>
         <div class="content">
             <div class="textBx">
-                <p class="parragraph">
+                <p>
+                    Mi viaje comenzó con la curiosidad de cómo funcionaba la web, pasando de WordPress a sumergirme en
+                    el código puro. Hoy, me especializo en el stack MERN (MongoDB, Express, React, Node.js).
                     <br><br>
-                    Desde el 2019 manejaba wordpress, plantillas y plugins, y al pasar al código, al principio temía no entender nada, sin embargo, hoy no
-                    paro de codear y buscar nuevas formas de mejorar el código, la lógica y flujo de trabajo.
-                    <br><br>
-                    Actualmente mi experiencia desarrollando código es en FrontEnd y BackEnd, usando React, Node con
-                    librerías
-                    como Express, Sequelize, NodeMailer, JsonWebToken, Bootstrap, React-hooks, entre otras.
-                    <br><br>
-                    Soy un hombre bendecido con una familia hermosa, de gusto por la lectura y series
-                    de acción.
-                    Bachiller de la Universidad Nacional Mayor de San Marcos y con estudios de Post Grado en Psicología
-                    Organizacional.
+                    Lo que me diferencia es mi background en <b>Psicología Organizacional</b>. Esta perspectiva me
+                    permite entender no solo la sintaxis técnica, sino también las necesidades del usuario.
                 </p>
+
                 <div class="iconPrograming">
-
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/html-5.png">
-                        <p class="iconContainerP">HTML 5</p>
+                    <div class="iconContainer" title="LangChain">
+                        <img class="iconPx" src="./img/langchain.png" alt="LangChain"
+                            style="object-fit: contain;">
+                        <p class="iconContainerP">LangChain</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/css-3.png">
-                        <p class="iconContainerP">CSS</p>
+                    
+                    <div class="iconContainer" title="Inteligencia Artificial">
+                        <img class="iconPx" src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="AI"
+                            style="object-fit: contain;">
+                        <p class="iconContainerP">AI / RAG</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/bootstrap.png">
-                        <p class="iconContainerP">bootstrap</p>
+                    <div class="iconContainer" title="JavaScript">
+                        <img class="iconPx" src="./img/js.png" alt="JS">
+                        <p class="iconContainerP">JS</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/js.png">
-                        <p class="iconContainerP">JavaScript</p>
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/physics.png">
+                    <div class="iconContainer" title="React">
+                        <img class="iconPx" src="./img/physics.png" alt="React">
                         <p class="iconContainerP">React</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/python.png">
-                        <p class="iconContainerP">Python</p>
-                    </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/redux.png">
-                        <p class="iconContainerP">Redux</p>
-                    </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/node.png">
+                    <div class="iconContainer" title="Node.js">
+                        <img class="iconPx" src="./img/node.png" alt="Node">
                         <p class="iconContainerP">Node</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/sequelize.png">
-                        <p class="iconContainerP">Sequelize</p>
+                    <div class="iconContainer" title="Nest.js">
+                        <img class="iconPx" src="./img/nest.png" alt="Node">
+                        <p class="iconContainerP">Nest.js</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/nodeMailer.png">
-                        <p class="iconContainerP">NodeMailer</p>
+                    <div class="iconContainer" title="Next.js">
+                        <img class="iconPx" src="./img/next.png" alt="Next.js">
+                        <p class="iconContainerP">Next.js</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/jwt.png">
-                        <p class="iconContainerP">JWT</p>
+                    <div class="iconContainer" title="PostgreSQL">
+                        <img class="iconPx" src="./img/postgresql.png" alt="SQL">
+                        <p class="iconContainerP">SQL</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/posmant.png">
+                    <div class="iconContainer" title="HTML5">
+                        <img class="iconPx" src="./img/html-5.png" alt="HTML">
+                        <p class="iconContainerP">HTML</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/postgresql.png">
+                    <div class="iconContainer" title="CSS3">
+                        <img class="iconPx" src="./img/css-3.png" alt="CSS">
+                        <p class="iconContainerP">CSS</p>
                     </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/jest.png">
-                        <p class="iconContainerP">Jest</p>
-                    </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/next.png">
-                        <p class="iconContainerP">Next.js 14</p>
-                    </div>
-                    <div class="iconContainer">
-                        <img class="iconPx" src="./img/wordpress.png">
-                        <p class="iconContainerP">Wordpress</p>
+                    <div class="iconContainer" title="Seguridad">
+                        <img class="iconPx" src="./img/jwt.png" alt="JWT">
+                        <p class="iconContainerP">Auth</p>
                     </div>
                 </div>
             </div>
             <div class="imgBx">
-                <img src="./img/fondo2.jpg">
+                <img src="./img/fondo2.jpg" alt="Foto Perfil">
             </div>
         </div>
     </section>
+
     <section class="services" id="services">
         <div class="title">
-            <h2 class="rule">Proyectos Recientes</h2>
-            <p class="parragraph six">Estos diferentes proyectos son parte de mi aprendizaje, que van desde la
-                maquetación y
-                diseño responsive,
-                el uso de APIs, manejos de CRUD y algunas librerías.</p>
+            <h2>Proyectos Destacados</h2>
+            <p>Soluciones reales enfocadas en rendimiento y escalabilidad.</p>
         </div>
         <div class="content">
-                <div class="servicesBx">
-                    <img src="./img/icon1.png">
-                    <h2>Página de Agencia Web en Next.js </h2>
-                    <p class="parragraph">
-                        Diseño web realizado en enero del 2024 en Next.js 13, usando librerías como framer motion, react-icons y Tailwind CSS. Proyecto diseñado para empresa de servicios web, desplegado en hosting privado y ejecutandolo con Node.js del cpanel para implementación módulos necesarios.
-                    </p>
-                    <a class="anchor" target="_blank" href="https://jose-gaspar-web.netlify.app/">Ver
-                        Web</a>
-                </div>
-                <div class="servicesBx">
-                    <img src="./img/icon1.png">
-                    <h2>Web Consultora Contable</h2>
-                    <p class="parragraph">
-                        Web responsive diseñado en diciembre del 2023 en Next.js 13, framework de React.js para un estudio contable. Este es mi primer proyecto independiente y en solitario.
-                        Este proyecto es especial porque todo el framework ha sido aprendido por cuenta propia y en un mes. Me permitió avanzar al descubrimiento de nuevas herramientas.
-                    </p>
-                    <a class="anchor" target="_blank" href="https://lh-consulting.netlify.app/">Ver
-                        Web</a>
-                </div>
-                <div class="servicesBx">
-                    <img src="./img/icon1.png">
-                    <h2>Web Consultora Laboral</h2>
-                    <p class="parragraph">
-                        Web responsive diseñado en <b>junio del 2018</b> en <b>CMS wordpress </b>para una consultora laboral. Este fue el primer proyecto wordpress realizado. Cuenta con plugins Elementor, el tema es Astra. Adicionalmente esta optimizado para buscadores web y posicionamiento SEO en todos sus servicios.
-                        
-                    </p>
-                    <a class="anchor" target="_blank" href="https://agmconsultoriaperu.com/">Ver
-                        Web</a>
-                </div>
-                <div class="servicesBx">
-                    <img src="./img/test.png">
-                    <h2>Testing con Jest y Supertest</h2>
-                    <p class="parragraph">Tomando como referencia el proyecto <b>Server Movies Backend</b>, se ha realizado
-                        los testing a cada modelo y relaciones (uno a muchos, muchos a muchos) para validar el correcto
-                        funcionamiento del código y del resultado de la lógica del servidor para la
-                        aplicación conjunta con el FrontEnd.
 
-                    </p>
-                    <a class="anchor" target="_blank" href="https://github.com/GasparU/movies-testing">Ver
-                        Github</a>
-                </div>
-            <div class="servicesBx">
-                <img src="./img/login_user.png">
-                <h2>Login con JWT y Bcrypt</h2>
-                <p class="parragraph">Mediante un diseño sencillo en <b> FrontEnd</b> y trabajado el servidor, la
-                    lógica, modelos, controladores y rutas en
-                    <b>Backend</b>, se creo un proyecto para crear y autenticar usuarios. El proyecto usa encriptación
-                    de contraseña mediante bcrypt y requiere activación en 2 pasos mediante correo electrónico.
+            <div class="servicesBx" style="border: 2px solid #00a8c6;"> <img src="./img/icon1.png" alt="IA Education">
+                <h2>Ariana Math (AI Powered)</h2>
+                <p>
+                    <b>Tecnología:</b> React, LangChain, OpenAI & RAG.
+                    <br>
+                    Plataforma educativa inteligente. Implementé un sistema <b>RAG (Retrieval-Augmented Generation)</b>. La IA genera problemas únicos y explicaciones
+                    paso a paso en tiempo real.
                 </p>
-                <a class="anchor" target="_blank" href="https://users-token-jgaspar.netlify.app/#/login">Ver
-                    Proyecto</a>
-            </div>
-            <div class="servicesBx">
-                <img src="./img/movies.png">
-                <h2>Server Movies Backend</h2>
-                <p class="parragraph">Diseñado en<b> FrontEnd</b> con un diseño sencillo e integrado con
-                    <b>Backend</b>, se creo un servidor para manejarlo con base de datos en Postgres, mediante
-                    sequelize y otras librerías. Se creo
-                    modelos, controladores y rutas de movies, actors, directors y genres. Permitiendo hacer un crud de
-                    cada ruta.
-                </p>
-                <a class="anchor" target="_blank" href="https://movie-jose-gaspar.netlify.app/">Ver Proyecto</a>
-            </div>
-            <div class="servicesBx">
-                <img src="./img/users.png">
-                <h2>CRUD de Usuarios</h2>
-                <p class="parragraph">Proyecto integral, <b>por parte de FrontEnd</b>, usando React y Vite, con
-                    librerías como
-                    Bootstrap, Axios, react-hooks entre otros.
-                    <b>En Backend</b>, se desarrollo un servidor desde cero, usando base de datos en Postgres,
-                    Sequelize,
-                    Express y dotenv.
-                    Permite traer, crear, editar y eliminar usuarios con su respectivo alert de diseño.
-                </p>
-                <a class="anchor" target="_blank" href="https://users-jose-gaspar.netlify.app/">Ver Proyecto</a>
-            </div>
-            <div class="servicesBx">
-                <img src="./img/pokemon.png">
-                <h2>App Pokemon</h2>
-                <p class="parragraph">Este proyecto responsive con vite, bulma, bootstrap, React Doom, entre otras
-                    herramientas, permite
-                    traer la data de todos los pokemones, filtrar por tipo o por nombre. También permite realizar vista
-                    detallada de cada Pokemon.
-                </p>
-                <a class="anchor" target="_blank" href="https://app-pokemons-jose-gaspar.netlify.app/">Ver Proyecto</a>
-            </div>
-            <div class="servicesBx">
-                <img src="./img/rick2.png">
-                <h2>Rick And Morty</h2>
-                <p class="parragraph">Proyecto realizado en React y Vite, usando la Api Rick And Morty. Tiene un botón
-                    que trae de manera
-                    aleatoria personajes por categoría. También se puede ingresar el orden numérico de los personajes.
-                    Adicionalmente tiene paginación para aquellas categorías de gran cantidad de personajes.</p>
-
-                <a class="anchor" target="_blank" href="https://location-jose-gaspar.netlify.app/">Ver Proyecto</a>
+                <a class="anchor" target="_blank" href="https://ariana-math-goij.vercel.app/">Ver Plataforma</a>
             </div>
 
             <div class="servicesBx">
-                <img src="./img/credit-card2.png">
-                <h2>Frases Random</h2>
-                <p class="parragraph">Aplicación web desarrollada en React y Vite. El objetivo es que con cada Click en
-                    un Botón, se
-                    muestre de manera random una frase célebre, con su autor y de igual manera cambie el fondo. Para
-                    este caso he usado la librería TsParticles y react-tsparticles.</p>
-                <a class="anchor" target="_blank" href="https://frases-celebres-jose-gaspar.netlify.app/">Ver
-                    Proyecto</a>
+                <img src="./img/icon1.png" alt="Web">
+                <h2>Agencia Web (Next.js)</h2>
+                <p>
+                    <b>Objetivo:</b> Alto rendimiento SEO.
+                    <br>
+                    Plataforma con <b>Next.js 13</b> y TailwindCSS. Puntuación 95+ en Google Lighthouse.
+                </p>
+                <a class="anchor" target="_blank" href="https://jose-gaspar-web.netlify.app/">Visitar Sitio</a>
             </div>
+
             <div class="servicesBx">
-                <img src="./img/climate.png">
-                <h2>App de Clima</h2>
-                <p class="parragraph">Proyecto de React que muestra el clima en base a la geolocalización del usuario,
-                    en cualquier país
-                    del mundo. Adicionalmente puede buscar otra ciudad y hacer la comparación. Se usa la Api Open
-                    Weather Map y una petición GET.</p>
-                <a class="anchor" target="_blank" href="https://app-clima-jose-gaspar.netlify.app/">Ver Proyecto</a>
+                <img src="./img/icon1.png" alt="Consultora">
+                <h2>Consultora Contable</h2>
+                <p>
+                    <b>Objetivo:</b> Presencia digital.
+                    <br>
+                    Sitio web full responsive enfocado en conversión y confianza del cliente.
+                </p>
+                <a class="anchor" target="_blank" href="https://lh-consulting.netlify.app/">Visitar Sitio</a>
             </div>
+
             <div class="servicesBx">
-                <img src="./img/icon1.png">
-                <h2>Diseño Web</h2>
-                <p class="parragraph">Este es el primer proyecto de maquetación y diseño web. Uso de las herramientas
-                    Html y CSS, sin el manejo de librerías de estilo o funcionamiento interactico adicional, enfocado en
-                    la presentación de una página informativa e iniciando en el responsive.</p>
-                <a class="anchor" target="_blank" href="https://web-jose-gaspar.netlify.app/">Ver Proyecto</a>
+                <img src="./img/movies.png" alt="API">
+                <h2>Movies API RESTful</h2>
+                <p>
+                    <b>Objetivo:</b> Backend robusto.
+                    <br>
+                    API escalable con <b>Node, Express y Postgres</b>. Arquitectura MVC y relaciones complejas.
+                </p>
+                <a class="anchor" target="_blank" href="https://github.com/GasparU/back_movie">Ver Backend</a>
+            </div>
+
+            <div class="servicesBx">
+                <img src="./img/login_user.png" alt="Auth">
+                <h2>Sistema Auth Seguro</h2>
+                <p>
+                    <b>Objetivo:</b> Seguridad.
+                    <br>
+                    Login con <b>JWT</b>, encriptación Bcrypt y manejo de sesiones seguras.
+                </p>
+                <a class="anchor" target="_blank" href="https://users-token-jgaspar.netlify.app/#/login">Probar Demo</a>
             </div>
         </div>
     </section>
+
     <section class="work" id="work">
         <div class="title">
-            <h2>Mi Linea de Carrera</h2>
-            <p class="parragraph seven">La programación me ha inspirado en seguir una linea de carrera orientadora
-                a fin de seguir un proceso de formación clara, estableciendo objetivos a mediano y largo
-                plazo. Si bien puede haber modificaciones, éstas deben seguir la siguiente ruta.
-            </p>
+            <h2>Roadmap Técnico</h2>
+            <p>Mi evolución constante en el desarrollo de software.</p>
         </div>
         <div class="content">
-            <div class="workBx">
+            <div class="workBx" style="background: #ff4757;">
                 <div class="imgBx">
-                    <h3 class="titleDev1">Primer Objetivo</h3>
-                    <!-- <img src="./img/img1.jpg"> -->
+                    <h3>Fase 1:<br>Fundamentos Sólidos</h3>
                 </div>
                 <div class="textBx">
-                    <h3>Html</h3>
-                    <h3>Css, Flex, Grid</h3>
-                    <h3>JavaScript</h3>
-                    <h3>React</h3>
+                    <h3>HTML5 Semántico</h3>
+                    <h3>CSS Grid/Flex</h3>
+                    <h3>JavaScript ES6+</h3>
                 </div>
             </div>
-            <div class="workBx">
+            <div class="workBx" style="background: #5352ed;">
                 <div class="imgBx">
-                    <h3 class="titleDev2">Segundo Objetivo</h3>
-                    <!-- <img src="./img/img2.jpg"> -->
+                    <h3>Fase 2:<br>Ecosistema React</h3>
                 </div>
                 <div class="textBx">
-                    <h3>Node</h3>
-                    <h3>Express</h3>
-                    <h3>Phyton</h3>
-                    <h3>Mysql</h3>
+                    <h3>React Hooks</h3>
+                    <h3>Redux/Zustand</h3>
+                    <h3>Next.js</h3>
+                    <h3>Consumo APIs</h3>
+                </div>
+            </div>
+            <div class="workBx" style="background: #0fb9b1;">
+                <div class="imgBx">
+                    <h3>Fase 3:<br>Backend Robusto</h3>
+                </div>
+                <div class="textBx">
+                    <h3>Node.js & Express</h3>
+                    <h3>PostgreSQL</h3>
                     <h3>MongoDB</h3>
+                    <h3>APIs RESTful</h3>
                 </div>
             </div>
-            <div class="workBx">
+            <div class="workBx" style="background: #ffa502;">
                 <div class="imgBx">
-                    <h3 class="titleDev3">Tercer Objetivo</h3>
-                    <!-- <img src="./img/img3.jpg"> -->
+                    <h3>Fase 4:<br>Nivel Profesional</h3>
                 </div>
                 <div class="textBx">
                     <h3>TypeScript</h3>
-                    <h3>Css Arquitecture</h3>
-                    <h3>Css Animaciones</h3>
-                    <h3>Css Frameworks</h3>
-                    <h3>React Three Fiber - 3D</h3>
-
+                    <h3>Seguridad Web</h3>
+                    <h3>Testing (Jest)</h3>
+                    <h3>CI/CD</h3>
                 </div>
             </div>
-            <div class="workBx">
-                <div class="imgBx">
-                    <h3 class="titleDev4">Cuarto Objetivo</h3>
-                    <!-- <img src="./img/img4.jpg"> -->
-                </div>
-                <div class="textBx">
-                    <h3>Web Secutity</h3>
-                    <h3>Content Security Policy</h3>
-                    <h3>Testing</h3>
-                </div>
-            </div>
-            <div class="workBx">
-                <div class="imgBx">
-                    <h3 class="titleDev5">Quinto Objetivo</h3>
-                    <!-- <img src="./img/img5.jpg"> -->
-                </div>
-                <div class="textBx">
-                    <h3>React Native</h3>
-                    <h3>Fluter</h3>
-                </div>
-            </div>
-        </div>
-
         </div>
     </section>
-    <section class="contact " id="contact">
-        <div class="title white">
-            <h2>Contact Me</h2>
-            <p class="parragraph">Para programar una entrevista de trabajo, por favor llene sus datos a continuación
-                para recibir su mail y ponerme en contacto con usted lo antes posible.
-            </p>
-        </div>
-        <form class="contactForm" id="form">
-            <div class="row">
-                <div class="col50">
-                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
-                </div>
-                <div class="col50">
-                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col50">
-                    <input type="text" name="email" id="email" placeholder="Email" required>
-                </div>
-                <div class="col50">
-                    <select class="select" name="pais" id="lang" required>
-                        <option value="Argentina">Seleccionar País</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Brasil">Brasil</option>
-                        <option value="Chile">Chile</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Ecuador">Ecuador</option>
-                        <option value="España">España</option>
-                        <option value="México">México</option>
-                        <option value="Perú">Perú</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-                <div class="col50">
-                    <input type="text" name="celular" id="celular" placeholder="Mobile No." required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col100">
-                    <textarea placeholder="Message" name="message" id="message" required></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col100">
-                    <input type="submit" id="button" value="Enviar">
-                </div>
-            </div>
-        </form>
-        <p class="curriculo">Si desea, puede descargar mi CV para conocer más de mi formación y experiencia</p>
-        <a href="./archive/JOSE_GASPAR_UNZUETA.pdf" class="curriculo-btn" target="_blank"
-            download="C.V._José_Gaspar_Full_Stack_Web_Developer.PDF">Descargar
-            Curriculo</a>
-        </div>
-    </section>
+
+    <div id="contact" class="servicesBx" style="text-align: center; grid-column: 1 / -1; padding: 50px;">
+        <img src="./img/login_user.png" alt="Email" style="margin: 0 auto 20px;">
+        <h2>¿Listo para colaborar?</h2>
+        <p>Envíame un correo directo y hablemos de tu próximo proyecto.</p>
+        <a class="anchor" href="mailto:TU_CORREO@EJEMPLO.COM">Enviar Email</a>
+    </div>
+
     <div class="copyright">
-        <p class="parragraph">Copyright 2023 Online Model. All Right Reserved.</p>
-    </div>
-    <div class="sidebar">
-        <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#services" onclick="toggleMenu()">Proyectos</a></li>
-            <li><a href="#work" onclick="toggleMenu()">career</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
+        <p>Desarrollado por José Gaspar © 2026.</p>
     </div>
 
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="./main.js"></script>
-    <script src="./index.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <script type="text/javascript">
-        emailjs.init('Bxpll00cvTqL7mH4-')
-    </script>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="./main.js"></script>
+    <script src="./index.js"></script>
+    <script src="./vanilla-tilt.js"></script>
+
     <script>
+        emailjs.init('Bxpll00cvTqL7mH4-');
+
         VanillaTilt.init(document.querySelectorAll(".workBx"), {
-            max: 45,
-            speed: 100
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.3,
+            scale: 1.05
         });
 
-        const bdark = document.querySelector('#bdark')
+        const bdark = document.querySelector('#bdark');
+        const body = document.body;
 
-        const contentBx = document.querySelector('.contentBx')
-        const services = document.querySelector('.services')
-        const work = document.querySelector('.work')
-        const two = document.querySelector('.two')
-        const three = document.querySelector('.three')
-        const four = document.querySelector('.four')
-        const five = document.querySelector('.five')
-        const six = document.querySelector('.six')
-        const seven = document.querySelector('.seven')
-        const dark = document.querySelector('.dark')
-        bdark.addEventListener('click', e => {
-            contentBx.classList.toggle('darkmode')
-            two.classList.toggle('two-2')
-            three.classList.toggle('two-2')
-            four.classList.toggle('two-2')
-            five.classList.toggle('two-2')
-            six.classList.toggle('two-2')
-            seven.classList.toggle('two-2')
-            dark.classList.toggle('dark-3')
-            services.classList.toggle('darkmode')
-            work.classList.toggle('darkmode')
-        })
+        const setTheme = (theme) => {
+            if (theme === 'dark') {
+                body.classList.add('dark-theme');
+                bdark.innerHTML = '<ion-icon name="sunny-outline"></ion-icon> Light';
+            } else {
+                body.classList.remove('dark-theme');
+                bdark.innerHTML = '<ion-icon name="moon-outline"></ion-icon> Dark';
+            }
+            localStorage.setItem('theme', theme);
+        }
 
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        setTheme(currentTheme);
+
+        bdark.addEventListener('click', () => {
+            const newTheme = body.classList.contains('dark-theme') ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
     </script>
 </body>
-
 
 </html>
