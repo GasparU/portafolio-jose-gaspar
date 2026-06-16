@@ -15,6 +15,12 @@
 </head>
 
 <body>
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+    </script>
     <div class="toggle" onclick="toggleMenu()"></div>
     <button class="dark" id="bdark">Dark/Light</button>
 
@@ -53,24 +59,143 @@
             <div class="cabecera-celular">
                 <h4 class="title-hola">Hola, soy</h4>
                 <h2>José Gaspar</h2>
-                <h4>Desarrollador Web Full Stack (MERN)</h4>
+                <!-- CAMBIO: Perfil alineado a la postulación de ingeniería de IA -->
+                <h4>AI Engineer & Full Stack Developer</h4>
                 <p>
-                    Transformo ideas complejas en aplicaciones web funcionales y escalables.
-                    Combino una sólida lógica de backend con un frontend intuitivo.
+                    Diseño e implemento arquitecturas de software robustas bajo principios SOLID, 
+                    motores híbridos de Inteligencia Artificial con LangChain y aplicaciones corporativas escalables.
                 </p>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
                     <a href="#about" class="btn">Conóceme</a>
-                    <a href="./archive/JOSE_GASPAR_CV.pdf" class="curriculo-btn"
-                        target="_blank">Descargar CV</a>
+                    <a href="./archive/JOSE_GASPAR_CV.pdf" class="curriculo-btn" target="_blank">Descargar CV</a>
                 </div>
             </div>
 
             <ul class="sci">
-                <li><a target="_blank" href="https://www.linkedin.com/in/josegasparunzueta/"><img
-                            src="./img/linkedin.png" alt="LinkedIn"></a></li>
-                <li><a target="_blank" href="https://api.whatsapp.com/send?phone=51929668883"><img
-                            src="./img/whatsapp.png" alt="WhatsApp"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/josegasparunzueta/"><img src="./img/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a target="_blank" href="https://api.whatsapp.com/send?phone=51929668883"><img src="./img/whatsapp.png" alt="WhatsApp"></a></li>
             </ul>
+        </div>
+    </section>
+
+    <!-- La sección "about" se mantiene exactamente igual a tu archivo original -->
+    <section class="about" id="about">
+        <div class="title">
+            <h2>Sobre Mí</h2>
+            <p>Más allá del código: Entendiendo el problema para construir la solución correcta.</p>
+        </div>
+        <div class="content">
+            <div class="textBx">
+                <p>
+                    Mi viaje comenzó con la curiosidad de cómo funcionaba la web, pasando de WordPress a sumergirme en
+                    el código puro. Hoy, me especializo en construir soluciones full-stack e integración de modelos de lenguaje artificial.
+                    <br><br>
+                    Lo que me diferencia es mi background en <b>Psicología Organizacional</b>. Esta perspectiva me
+                    permiter entender no solo la sintaxis técnica, sino también las necesidades del usuario y las lógicas del negocio bajo entornos de alta presión.
+                </p>
+
+                <div class="iconPrograming">
+                    <div class="iconContainer" title="LangChain">
+                        <img class="iconPx" src="./img/langchain.png" alt="LangChain" style="object-fit: contain;">
+                        <p class="iconContainerP">LangChain</p>
+                    </div>
+                    <div class="iconContainer" title="Inteligencia Artificial">
+                        <img class="iconPx" src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="AI" style="object-fit: contain;">
+                        <p class="iconContainerP">AI / RAG</p>
+                    </div>
+                    <div class="iconContainer" title="JavaScript">
+                        <img class="iconPx" src="./img/js.png" alt="JS">
+                        <p class="iconContainerP">JS</p>
+                    </div>
+                    <div class="iconContainer" title="React">
+                        <img class="iconPx" src="./img/physics.png" alt="React">
+                        <p class="iconContainerP">React</p>
+                    </div>
+                    <div class="iconContainer" title="Node.js">
+                        <img class="iconPx" src="./img/node.png" alt="Node">
+                        <p class="iconContainerP">Node</p>
+                    </div>
+                    <div class="iconContainer" title="Nest.js">
+                        <img class="iconPx" src="./img/nest.png" alt="Node">
+                        <p class="iconContainerP">Nest.js</p>
+                    </div>
+                    <div class="iconContainer" title="Next.js">
+                        <img class="iconPx" src="./img/next.png" alt="Next.js">
+                        <p class="iconContainerP">Next.js</p>
+                    </div>
+                    <div class="iconContainer" title="PostgreSQL">
+                        <img class="iconPx" src="./img/postgresql.png" alt="SQL">
+                        <p class="iconContainerP">SQL</p>
+                    </div>
+                    <div class="iconContainer" title="HTML5">
+                        <img class="iconPx" src="./img/html-5.png" alt="HTML">
+                        <p class="iconContainerP">HTML</p>
+                    </div>
+                    <div class="iconContainer" title="CSS3">
+                        <img class="iconPx" src="./img/css-3.png" alt="CSS">
+                        <p class="iconContainerP">CSS</p>
+                    </div>
+                    <div class="iconContainer" title="Seguridad">
+                        <img class="iconPx" src="./img/jwt.png" alt="JWT">
+                        <p class="iconContainerP">Auth</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imgBx">
+                <img src="./img/fondo2.jpg" alt="Foto Perfil">
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN DE PROYECTOS CRISTALINA Y DE ALTO NIVEL TÉCNICO -->
+    <section class="services" id="services">
+        <div class="title">
+            <h2>Proyectos de Ingeniería</h2>
+            <p>Soluciones de software real enfocadas en rendimiento, escalabilidad e IA Generativa.</p>
+        </div>
+        <div class="content">
+
+            <!-- PROYECTO 1: RECLUTAMIENTO SAAS (CÓDIGO PRIVADO CON ACCESO INVITADO) -->
+            <div class="servicesBx" style="border: 2px solid #00a8c6;"> 
+                <img src="./img/icon1.png" alt="SaaS Reclutamiento">
+                <h2>Multi-Tenant SaaS: Reclutamiento Inteligente</h2>
+                <p>
+                    <b>Stack:</b> NestJS, React, Prisma ORM, LangChain, PostgreSQL.
+                    <br><br>
+                    Arquitectura backend modular con aislamiento de datos Multi-SaaS. Integra agentes con LangChain para la extracción automatizada y screening de archivos curriculares en tiempo real, validado bajo Spec-Driven Development (Jest/Supertest).
+                </p>
+                <!-- Recuerda configurar en el Login de este enlace un botón "Ingresar como Invitado" -->
+                <a class="anchor" target="_blank" href="https://reclutamiento-ofvs.vercel.app/login">🔗 Acceso Demo</a>
+                <a class="anchor" target="_blank" href="https://github.com/GasparU/ariana-math">💻 GitHub Privado</a>
+                <a class="anchor" target="_blank" href="https://www.youtube.com/watch?v=TU_VIDEO_RECLUTAMIENTO">🎥 Video Demo (1:28)</a>
+            </div>
+
+            <!-- PROYECTO 2: ARIANA MATH QUEST -->
+            <div class="servicesBx" style="border: 2px solid #00a8c6;"> 
+                <img src="./img/icon1.png" alt="IA Education">
+                <h2>Ariana Math Quest (AI Powered)</h2>
+                <p>
+                    <b>Stack:</b> React, NestJS, LangChain, Mafs, KaTeX, Prisma.
+                    <br><br>
+                    Plataforma de entrenamiento olímpico basada en una arquitectura RAG. Implementa un motor híbrido (OpenAI/Gemini) con control estricto de outputs vía Zod e ingeniería de prompts avanzada para ejecutar tutoría pedagógica socrática.
+                </p>
+                <a class="anchor" target="_blank" href="https://concursos-colegios-ariana.vercel.app/login">🔗 Acceso Demo</a>
+                <a class="anchor" target="_blank" href="https://github.com/GasparU/ariana-math">💻 GitHub Privado</a>
+                <a class="anchor" target="_blank" href="https://www.youtube.com/watch?v=TU_NUEVO_VIDEO_DE_1_42">🎥 Video Demo (1:42)</a>
+            </div>
+
+            <!-- PROYECTO 3: CASO DE ÉXITO CORPORATIVO (AGM PERÚ) -->
+            <div class="servicesBx" style="border: 2px solid #00a8c6;"> 
+                <img src="./img/icon1.png" alt="Migración Astro">
+                <h2>Plataforma Corporativa: Migración Estática</h2>
+                <p>
+                    <b>Stack:</b> Astro, JavaScript, Islands Architecture, TailwindCSS.
+                    <br><br>
+                    Migración integral de infraestructura web corporativa desde un sistema legacy monolítico (WordPress) hacia componentes estáticos ultraligeros. Reducción del 40% en tiempos de carga y optimización estable de 94+ en Google PageSpeed móvil.
+                </p>
+                <a class="anchor" target="_blank" href="https://agmconsultoriaperu.com/">🔗 Visitar Sitio</a>
+            </div>
+
         </div>
     </section>
 
@@ -145,69 +270,53 @@
         </div>
     </section>
 
+    <!-- NUEVA SECCIÓN DE PROYECTOS CRISTALINA Y DE ALTO NIVEL TÉCNICO -->
     <section class="services" id="services">
         <div class="title">
-            <h2>Proyectos Destacados</h2>
-            <p>Soluciones reales enfocadas en rendimiento y escalabilidad.</p>
+            <h2>Proyectos de Ingeniería</h2>
+            <p>Soluciones de software real enfocadas en rendimiento, escalabilidad e IA Generativa.</p>
         </div>
         <div class="content">
 
-            <div class="servicesBx" style="border: 2px solid #00a8c6;"> <img src="./img/icon1.png" alt="IA Education">
-                <h2>Ariana Math (AI Powered)</h2>
+            <!-- PROYECTO 1: RECLUTAMIENTO SAAS -->
+            <div class="servicesBx" style="border: 2px solid #00a8c6;"> 
+                <img src="./img/icon1.png" alt="SaaS Reclutamiento">
+                <h2>Multi-Tenant SaaS: Reclutamiento Inteligente</h2>
                 <p>
-                    <b>Tecnología:</b> React, LangChain, OpenAI & RAG.
-                    <br>
-                    Plataforma educativa inteligente con <b>RAG (Retrieval-Augmented Generation)</b>. La IA genera problemas únicos y explicaciones
-                    paso a paso en tiempo real.
+                    <b>Stack:</b> NestJS, React, Prisma ORM, LangChain, PostgreSQL.
+                    <br><br>
+                    Arquitectura backend modular con aislamiento de datos Multi-SaaS. Integra agentes con LangChain para la extracción automatizada y screening de archivos curriculares en tiempo real, validado bajo Spec-Driven Development (Jest/Supertest).
                 </p>
-                <a class="anchor" target="_blank" href="https://ariana-math-goij.vercel.app/">Ver Plataforma</a>
-                <a class="anchor" target="_blank" href="https://github.com/GasparU/ariana-math">Github</a>
-                <a class="anchor" target="_blank" href="https://www.youtube.com/watch?v=jHyfh9-CvuY">Video Demo</a>
+                <a class="anchor" target="_blank" href="https://TU-URL-DE-RECLUTAMIENTO.vercel.app/">🔗 Acceso Demo</a>
+                <a class="anchor" target="_blank" href="https://www.youtube.com/watch?v=TU_VIDEO_RECLUTAMIENTO">🎥 Video Demo</a>
             </div>
 
-            <div class="servicesBx">
-                <img src="./img/icon1.png" alt="Web">
-                <h2>Agencia Web (Next.js)</h2>
+            <!-- PROYECTO 2: ARIANA MATH QUEST -->
+            <div class="servicesBx" style="border: 2px solid #00a8c6;"> 
+                <img src="./img/icon1.png" alt="IA Education">
+                <h2>Ariana Math Quest (AI Powered)</h2>
                 <p>
-                    <b>Objetivo:</b> Alto rendimiento SEO.
-                    <br>
-                    Plataforma con <b>Next.js 13</b> y TailwindCSS. Puntuación 95+ en Google Lighthouse.
+                    <b>Stack:</b> React, NestJS, LangChain, Mafs, KaTeX, Prisma.
+                    <br><br>
+                    Plataforma de entrenamiento olímpico basada en una arquitectura RAG. Implementa un motor híbrido (OpenAI/Gemini) con control estricto de outputs vía Zod e ingeniería de prompts avanzada para ejecutar tutoría pedagógica socrática.
                 </p>
-                <a class="anchor" target="_blank" href="https://jose-gaspar-web.netlify.app/">Visitar Sitio</a>
+                <a class="anchor" target="_blank" href="https://ariana-math-goij.vercel.app/">🔗 Acceso Demo</a>
+                <a class="anchor" target="_blank" href="https://github.com/GasparU/ariana-math">💻 GitHub Público</a>
+                <a class="anchor" target="_blank" href="https://www.youtube.com/watch?v=TU_NUEVO_VIDEO_DE_1_42">🎥 Video Demo (1:42)</a>
             </div>
 
-            <div class="servicesBx">
-                <img src="./img/icon1.png" alt="Consultora">
-                <h2>Consultora Contable</h2>
+            <!-- PROYECTO 3: CASO DE ÉXITO CORPORATIVO (AGM PERÚ) -->
+            <div class="servicesBx" style="border: 2px solid #00a8c6;"> 
+                <img src="./img/icon1.png" alt="Migración Astro">
+                <h2>Plataforma Corporativa: Migración Estática</h2>
                 <p>
-                    <b>Objetivo:</b> Presencia digital.
-                    <br>
-                    Sitio web full responsive enfocado en conversión y confianza del cliente.
+                    <b>Stack:</b> Astro, JavaScript, Islands Architecture, TailwindCSS.
+                    <br><br>
+                    Migración integral de infraestructura web corporativa desde un sistema legacy monolítico (WordPress) hacia componentes estáticos ultraligeros. Reducción del 40% en tiempos de carga y optimización estable de 94+ en Google PageSpeed móvil.
                 </p>
-                <a class="anchor" target="_blank" href="https://lh-consulting.netlify.app/">Visitar Sitio</a>
+                <a class="anchor" target="_blank" href="https://agmconsultoriaperu.com/">🔗 Visitar Sitio</a>
             </div>
 
-            <div class="servicesBx">
-                <img src="./img/movies.png" alt="API">
-                <h2>Movies API RESTful</h2>
-                <p>
-                    <b>Objetivo:</b> Backend robusto.
-                    <br>
-                    API escalable con <b>Node, Express y Postgres</b>. Arquitectura MVC y relaciones complejas.
-                </p>
-                <a class="anchor" target="_blank" href="https://github.com/GasparU/back_movie">Ver Backend</a>
-            </div>
-
-            <div class="servicesBx">
-                <img src="./img/login_user.png" alt="Auth">
-                <h2>Sistema Auth Seguro</h2>
-                <p>
-                    <b>Objetivo:</b> Seguridad.
-                    <br>
-                    Login con <b>JWT</b>, encriptación Bcrypt y manejo de sesiones seguras.
-                </p>
-                <a class="anchor" target="_blank" href="https://users-token-jgaspar.netlify.app/#/login">Probar Demo</a>
-            </div>
         </div>
     </section>
 
@@ -266,13 +375,15 @@
     <div id="contact" class="servicesBx" style="text-align: center; grid-column: 1 / -1; padding: 50px;">
         <img src="./img/login_user.png" alt="Email" style="margin: 0 auto 20px;">
         <h2>¿Listo para colaborar?</h2>
-        <p>Envíame un correo directo y hablemos de tu próximo proyecto.</p>
-        <a class="anchor" href="mailto:TU_CORREO@EJEMPLO.COM">Enviar Email</a>
+        <p>Envíame un mensaje directo a mi whatsapp y hablemos de tu próximo proyecto.</p>
+        
     </div>
 
     <div class="copyright">
         <p>Desarrollado por José Gaspar © 2026.</p>
     </div>
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -316,6 +427,11 @@
             setTheme(newTheme);
         });
     </script>
+
+<a href="https://api.whatsapp.com/send?phone=51929668883" class="whatsapp-sticky" target="_blank" alt="Contactar por WhatsApp">
+    <img src="./img/whatsapp.png" alt="WhatsApp">
+</a>
+    
 </body>
 
 </html>

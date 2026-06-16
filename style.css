@@ -21,6 +21,27 @@ body.dark-theme {
     --card-text: #fff;
 }
 
+body.dark-theme .servicesBx img {
+    filter: invert(1) brightness(2);
+    transition: filter 0.3s ease;
+}
+
+/* Aplicación de las variables nativas a las tarjetas de proyectos */
+body.dark-theme .servicesBx {
+    background: var(--card-bg) !important;
+    color: var(--card-text) !important;
+    border-color: var(--accent-color) !important;
+}
+
+body.dark-theme .servicesBx:hover {
+    background: var(--card-hover) !important;
+}
+
+body.dark-theme .servicesBx p,
+body.dark-theme .servicesBx h2 {
+    color: var(--card-text) !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,9 +58,7 @@ body {
 }
 
 /* --- EFECTO DE ANIMACIÓN (BLOCKS - RESTAURADO) --- */
-/* Esta es la clase mágica que usa tu main.js */
 .block {
-    /* IMPORTANTE: Aquí va tu foto de perfil */
     background-image: url('./img/imagen32.jpg');
     background-repeat: no-repeat;
     /* Tamaño fijo necesario para que el script cuadre los trozos */
@@ -86,7 +105,6 @@ p {
     position: relative;
     width: 100%;
     display: flex;
-    /* Flexbox funciona mejor aquí para mantener la foto a la izq */
     flex-wrap: wrap;
     min-height: 100vh;
 }
@@ -97,21 +115,17 @@ p {
     width: var(--sidebar-width);
     height: 100vh;
     overflow: hidden;
-    /* Para que la animación no se salga */
     flex-shrink: 0;
-    /* Evita que se encoja */
 }
 
 /* Contenido Principal (Derecha) */
 .banner .contentBx {
     flex: 1;
-    /* Ocupa el resto del espacio */
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px;
     min-width: 300px;
-    /* Evita que se aplaste demasiado */
 }
 
 /* Tipografía */
@@ -219,7 +233,6 @@ body.dark-theme .sci li img {
 
 .iconContainer {
     background-color: #fff;
-    /* Siempre blanco para que se vean los logos */
     padding: 10px;
     border-radius: 15px;
     display: flex;
@@ -230,10 +243,8 @@ body.dark-theme .sci li img {
     height: 85px;
     transition: transform 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    /* Sombra para resaltar */
 }
 
-/* En dark mode, mantenemos el fondo blanco o gris muy claro para que los iconos PNG (que suelen ser negros o de color) se vean bien */
 body.dark-theme .iconContainer {
     background-color: #fff;
 }
@@ -244,20 +255,18 @@ body.dark-theme .iconContainer {
 
 .iconPx {
     height: 40px;
-    /* Un poco más grandes */
     margin-bottom: 5px;
     object-fit: contain;
 }
 
 .iconContainerP {
     color: #333 !important;
-    /* Texto negro siempre dentro del cuadro blanco */
     font-size: 0.7rem;
     font-weight: 700;
     margin: 0;
 }
 
-/* --- SERVICES / PROJECTS --- */
+/* --- SERVICES / PROJECTS (RESPONSIVIDAD MÁXIMA) --- */
 .title {
     width: 100%;
     text-align: center;
@@ -272,8 +281,11 @@ body.dark-theme .iconContainer {
 
 .services .content {
     display: grid;
+    /* Cambio técnico: Las tarjetas calculan su tamaño solas en base al espacio disponible */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .servicesBx {
@@ -284,6 +296,8 @@ body.dark-theme .iconContainer {
     flex-direction: column;
     transition: 0.3s;
     border: 1px solid transparent;
+    width: 100%; /* Evita desbordamiento horizontal */
+    box-sizing: border-box;
 }
 
 body.dark-theme .servicesBx {
@@ -340,7 +354,7 @@ body.dark-theme .servicesBx {
     color: #fff;
 }
 
-/* --- WORK / CAREER (CÁRD DE COLORES) --- */
+/* --- WORK / CAREER --- */
 .work .content {
     display: flex;
     justify-content: center;
@@ -370,16 +384,13 @@ body.dark-theme .servicesBx {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    /* Asegura texto centrado */
 }
 
-/* ARREGLO: Padding aumentado para que el texto no toque los bordes */
 .workBx .textBx {
     background: rgba(0, 0, 0, 0.9);
     opacity: 0;
     transition: 0.5s;
     padding: 40px;
-    /* Aumentado de 20px a 40px */
     transform: translateZ(20px);
 }
 
@@ -393,7 +404,6 @@ body.dark-theme .servicesBx {
     margin: 10px 0;
     font-weight: 600;
     line-height: 1.5;
-    /* Mejor lectura */
 }
 
 .workBx .imgBx h3 {
@@ -401,9 +411,7 @@ body.dark-theme .servicesBx {
     font-size: 1.6rem;
     font-weight: 700;
     padding: 20px;
-    /* Evita que el título se salga */
 }
-
 
 /* --- CONTACT FORM --- */
 .contactForm {
@@ -491,8 +499,7 @@ body.dark-theme nav.navbar {
     display: none;
 }
 
-
-/* --- MOBILE & TABLET --- */
+/* --- MOBILE & TABLET CORE --- */
 .toggle {
     position: fixed;
     top: 25px;
@@ -546,27 +553,67 @@ body.dark-theme nav.navbar {
     text-align: center;
 }
 
+/* --- STICKY WHATSAPP (CORREGIDO: CLASE INICIADA CON PUNTO) --- */
+.whatsapp-sticky {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 3000; /* Asegura que flote por encima del footer */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-/* --- RESPONSIVE QUERIES --- */
+.whatsapp-sticky img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.whatsapp-sticky:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(37, 211, 102, 0.5);
+}
+
+/* --- BREAKPOINTS Y RESPONSIVIDAD (MEDIA QUERIES) --- */
 @media (max-width: 1100px) {
-
-    /* Si la pantalla es mediana, ocultamos la animación compleja porque necesita 550px fijos */
     .banner {
         flex-direction: column;
+        align-items: center;
     }
 
+    /* CAMBIO: Centramos la foto desintegrada arriba del texto en tablets */
     .banner .imgSidebar {
-        display: none;
+        display: block; 
+        position: relative;
+        width: 100%;
+        max-width: 450px; 
+        height: 380px;    
+        margin: 40px auto 0 auto;
     }
 
-    /* Si prefieres mantenerla, tendríamos que reescalar todo el JS, lo cual es riesgoso ahora */
+    /* Fuerza a que los bloques inyectados por JS se contengan en el layout elástico */
+    .banner .imgSidebar .block,
+    .banner .imgSidebar div {
+        max-width: 100%;
+    }
 
     .banner .contentBx {
-        padding: 100px 30px;
+        padding: 40px 30px 80px 30px;
         text-align: center;
+        width: 100%;
     }
 
     .cabecera-celular {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -596,5 +643,22 @@ body.dark-theme nav.navbar {
 
     .contactForm .row {
         flex-direction: column;
+    }
+    
+    .services .content {
+        grid-template-columns: 1fr; /* Columna única en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-sticky {
+        bottom: 20px;
+        right: 20px;
+        width: 48px;
+        height: 48px;
+    }
+    .whatsapp-sticky img {
+        width: 25px;
+        height: 25px;
     }
 }
