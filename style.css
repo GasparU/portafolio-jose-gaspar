@@ -281,23 +281,27 @@ body.dark-theme .iconContainer {
 
 .services .content {
     display: grid;
-    /* Cambio técnico: Las tarjetas calculan su tamaño solas en base al espacio disponible */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    /* CAMBIO: Aumentamos el ancho mínimo a 380px para que las tarjetas sean anchas */
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 35px;
     width: 100%;
+    max-width: 1200px; /* Mantiene un contenedor armónico sin estirarse al infinito */
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
 .servicesBx {
     background: var(--card-bg);
-    padding: 40px 30px;
+    padding: 30px 35px; /* Menos alto, más espacio a los lados */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Alinea los botones siempre al fondo */
     transition: 0.3s;
     border: 1px solid transparent;
-    width: 100%; /* Evita desbordamiento horizontal */
+    width: 100%;
     box-sizing: border-box;
+    min-height: 380px; /* Altura controlada y uniforme */
 }
 
 body.dark-theme .servicesBx {
@@ -582,6 +586,17 @@ body.dark-theme nav.navbar {
     box-shadow: 0px 6px 15px rgba(37, 211, 102, 0.5);
 }
 
+.servicesBx .anchor-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.servicesBx .anchor-group .anchor {
+    margin-top: 0;
+}
+
 /* --- BREAKPOINTS Y RESPONSIVIDAD (MEDIA QUERIES) --- */
 @media (max-width: 1100px) {
     .banner {
@@ -661,4 +676,24 @@ body.dark-theme nav.navbar {
         width: 25px;
         height: 25px;
     }
+}
+
+@media (max-width: 768px) {
+    .services .content {
+        grid-template-columns: 1fr; /* 1 sola columna en celulares/tablets */
+    }
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;      /* Centra el texto en cualquier pantalla */
+    padding: 30px 20px;      /* Espacio superior/inferior y margen de seguridad lateral */
+    background: transparent;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
 }
